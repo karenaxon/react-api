@@ -23,9 +23,9 @@ class Headlines extends React.Component {
       return (
         <React.Fragment>
           <div className="p-5 mb-4 bg-light rounded-3">
-      <div className="container-fluid py-5">
+      <div className="container-fluid py-5 text-center">
         <h1 className="display-5 fw-bold">Today's Headlines</h1>
-        <p className="col-md-8 fs-4">Source: New York Times API</p>
+        <p className="fs-4">Source: <a href="https://developer.nytimes.com/" target="_blank">New York Times API</a></p>
       
       </div>
     </div>
