@@ -25,7 +25,12 @@ This application makes an API call.
 * Click on the green "Code" button and copy the repository URL.
 * Open your terminal and navigate to the location where you would like to clone the application.
 * Use the command _git clone https://github.com/karenaxon/react-api.git_ to clone the repository.
-* From the root directory of the application, the kegs-tracker, run the following commands:
+* Get a free API key by going to the [New York Times API](https://developer.nytimes.com) website.
+* Create an .env file at the top level of your directory.
+* Add your key to the .env file in the following format:
+  
+  ```REACT_APP_API_KEY=YourKeyHere```.
+* From the root directory of the application, run the following commands:
   - _npm install_
   - _npm run start_
 * Navigate to ```localhost:3000``` in your favorite web browser to view the project.
