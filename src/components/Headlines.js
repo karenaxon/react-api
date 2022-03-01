@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { makeApiCall } from './actions';
+import { makeApiCall } from './../actions';
 
 class Headlines extends React.Component{
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
   
-  }
+  // }
 
     componentDidMount(){
       const { dispatch } = this.props;
@@ -17,7 +17,7 @@ class Headlines extends React.Component{
       const { error, isLoaded, headlines } = this.props;
       if (error) {
         return <React.Fragment>Error: {error.message}</React.Fragment>;
-      } else if(!isLoaded) {
+      } else if(isLoaded) {
         return <React.Fragment>Loading...</React.Fragment>;
       } else{
         return (

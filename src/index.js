@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import { createStore, applyMiddleware } from 'redux';
+import reducer from './reducers/headlines-reducer';
 import thunkMiddleWare from 'redux-thunk';
 import middlewareLogger from './middleware/middleware-logger';
-
 import { Provider } from 'react-redux';
 
 const store = createStore(reducer, applyMiddleware(thunkMiddleWare, middlewareLogger));
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={ store }>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
