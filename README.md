@@ -3,6 +3,10 @@ This application makes an API call.
 
 #### By Karen Axon & Kate Kiatsiri
 
+<p align="center">
+  <img src="./src/images/proj-pic.jpg" height="382px">
+</p>
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## Technologies Used
