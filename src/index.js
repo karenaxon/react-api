@@ -13,9 +13,7 @@ const store = createStore(reducer, applyMiddleware(thunkMiddleWare, middlewareLo
 
 ReactDOM.render(
   <Provider store={ store }>
-    <div className='container'>
       <App />
-    </div>
   </Provider>,
   document.getElementById('root')
 );
